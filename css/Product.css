@@ -1,3 +1,6 @@
+
+@import url('http://fonts.cdnfonts.com/css/broadway');
+
 *{
 	margin:0;
 	padding:0;
@@ -22,7 +25,7 @@ i{
 
 .logo{
 	font-size:2rem;
-  font-family: 'Broadway', sans-serif;	
+  font-family: 'Broadway', sans-serif;
   flex-basis:200px;
 }
 
