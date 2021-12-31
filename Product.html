@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="header">
+	<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
 	<div class="logo">Fashion</div>
 	<nav>
 		<ul class="ul1" id="menu">
@@ -29,9 +30,14 @@
 			<li><a href="#">Help</a></li>
 		</ul>
 	</nav>
-	<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
 	<div class="login"><a href="login.html" class="login-a">Login</a></div>
-	<div class="cart"><a href="#" class="cart-logo"><i class='bx bx-cart'></i></a></div>
+	<div class="cart">
+         <div class="zero">
+      <span class="span-9"> 0 </span></div>
+
+
+
+		<a href="#" class="cart-logo"><i class='bx bx-cart'></i></a></div>
 </div>
 
 <br>
@@ -504,11 +510,6 @@
 		<span class="span-4">4</span>
 	</div>
 
-
-<div class="dot">
-		<span class="span-4">.</span>
-	</div>
-
 <div class="dot">
 		<span class="span-4">.</span>
 	</div>
@@ -621,21 +622,23 @@
 
 
 
-
  <!----------*Script*-------- -->
+
+
+
 <script>
-	
+  
 function toggle(){
    
    const x = document.getElementById("menu");
 
        if(x.style.display == "block")
        {
-       	x.style.display = "none";
+        x.style.display = "none";
        }
        else
        {
-       	x.style.display ="block";
+        x.style.display ="block";
        }
 }
 

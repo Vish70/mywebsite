@@ -23,6 +23,7 @@
 <body>
 
 	<div class="header">
+    <div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
 		<div class="logo">Fashion</div>
 		<nav>
 			<ul class="ul1" id="menu">
@@ -40,12 +41,18 @@
 				<li><a href="#">Help</a></li>
 			</ul>
 		</nav>
-		<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
+	
 		<div class="login"><a href="login.html" class="login-a">Login</a></div>
-		<div class="cart"><a href="#" class="cart-logo"><i class='bx bx-cart'></i></a></div>
-	</div>
-	
-	
+		<div class="cart">
+   <div class="zero">
+      <span class="span-9"> 0 </span></div>
+
+      <a href="#" class="cart-logo"><i class='bx bx-cart'></i></a>
+      </div>
+  </div>
+
+</div>
+
     <main>
     	   <div class="bgimg-1">
 
@@ -59,6 +66,7 @@
     				<span class="span-1">Fashion</span>
     				<p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati recusandae vitae nostrum atque eum Culpa voluptates.</p>
            </div>
+          
            <div class="btn-1">
  	           <a href="Product.html" class="btn-a-1">Product's <i class="fas fa-arrow-to-right"></i></a>
     			</div>
@@ -84,7 +92,8 @@
 
           <div class="bg1">
           	<div class="icon">
-         	<i class='bx bx-bookmark-alt-minus'></i>
+         	<i class='bx bx-bookmark-alt-minus'>
+          </i>
          	</div>
          	<p>7-Day Return</p>
          </div>
@@ -407,13 +416,13 @@
 		    <div class="face-book">
 			<a href="#" id="footer-a">
 				<i class="fab fa-facebook-f"></i>
-				<span>Face</span>book</a>
+				Facebook</a>
 			</div>
 			<div class="inta-gram">
-       	    <a href="#" id="footer-a"><i class="fab fa-instagram"></i> <span>Insta</span>gram</a>
+       	    <a href="#" id="footer-a"><i class="fab fa-instagram"></i> Instagram</a>
        	    </div>
        	    <div class="twi-ter">
-       	    <a href="#" id="footer-a"><i class="fab fa-twitter"></i> <span>Twit</span>ter</a>
+       	    <a href="#" id="footer-a"><i class="fab fa-twitter"></i> Twitter</a>
        	    </div>
          </div>
 
@@ -482,30 +491,29 @@
 
 
 
-
-
-
-
-
-
-
  <!----------*Script*-------- -->
+
+
+
 <script>
-	
+  
 function toggle(){
    
    const x = document.getElementById("menu");
 
        if(x.style.display == "block")
        {
-       	x.style.display = "none";
+        x.style.display = "none";
        }
        else
        {
-       	x.style.display ="block";
+        x.style.display ="block";
        }
 }
 
 </script>
+
+
+
 </body>
 </html>

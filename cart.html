@@ -13,6 +13,7 @@
 <body>
 
 <div class="header">
+	<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
 		<div class="logo">Fashion</div>
 		<nav>
 			<ul class="ul1" id="menu">
@@ -30,15 +31,21 @@
 				<li><a href="#">Help</a></li>
 			</ul>
 		</nav>
-		<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
 		<div class="login"><a href="login.html" class="login-a">Login</a></div>
-		<div class="cart"><a href="#" class="cart-logo"><i class='bx bx-cart'></i></a></div>
+		<div class="cart">
+         <div class="zero">
+      <span class="span-9"> 0 </span></div>
+
+
+			<a href="#" class="cart-logo"><i class='bx bx-cart'></i></a></div>
 	</div>
 
 <section>
 	<div class="cart-page">
 	    <div class="product">
+	    	<div class="big-img">
 	    	<img src="image/brand2.jpg" alt="">
+	    	</div>
          <div class="small-img">
          	<div class="small-1">
          		<img src="image/boy.jpg" alt="">
@@ -96,9 +103,11 @@
 		<div class="txt5">
          <span class="span-3">Rs.300</span>
         <a href="#" class="btn-a">Buy</a>
+        <div class="stars">
          <i class="fas fa-star"></i>
 		<i class="fas fa-star"></i>
 		<i class="fas fa-star-half-alt"></i>
+		</div>
         </div>
 
 
@@ -107,9 +116,11 @@
 			<div class="txt5">
          <span class="span-3">Rs.300</span>
         <a href="#" class="btn-a">Buy</a>
+        <div class="stars">
          <i class="fas fa-star"></i>
 		<i class="fas fa-star"></i>
 		<i class="fas fa-star-half-alt"></i>
+		</div>
         </div>
 
 
@@ -118,9 +129,11 @@
         	<div class="txt5">
          <span class="span-3">Rs.300</span>
         <a href="#" class="btn-a">Buy</a>
+        <div class="stars">
          <i class="fas fa-star"></i>
 		<i class="fas fa-star"></i>
 		<i class="fas fa-star-half-alt"></i>
+		</div>
         </div>
 </div>
 
@@ -144,11 +157,6 @@
 	</div>
 	<div class="circle">
 		<span class="span-4">4</span>
-	</div>
-
-
-<div class="dot">
-		<span class="span-4">.</span>
 	</div>
 
 <div class="dot">
@@ -176,7 +184,7 @@
 			<h6><span class="span-8">Link</span>shortcut</h6>
 				<ul class="footer-ul-1">
 				<li class="footer-li"><a href="index.html" id="footer-a">Home</a></li>
-				<li><a href="#" id="footer-a">Product</a></li>
+				<li><a href="Product.html" id="footer-a">Product</a></li>
 					   <ul class="footer-ul-2">
 
                         <li><a href="Get more.html" id="footer-a">Men's"</a></li>
@@ -263,23 +271,30 @@
 
 
 
+ <!----------*Script*-------- -->
+
+
+
 <script>
-	
+  
 function toggle(){
    
    const x = document.getElementById("menu");
 
        if(x.style.display == "block")
        {
-       	x.style.display = "none";
+        x.style.display = "none";
        }
        else
        {
-       	x.style.display ="block";
+        x.style.display ="block";
        }
 }
 
 </script>
+
+
+
 
 
 </body>
