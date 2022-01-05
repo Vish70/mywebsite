@@ -940,7 +940,7 @@ color:#fff;
 
 .container5{
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    /* background-color:black; */
+    background-color:black;
 	grid-column-gap:1.3rem;
 	grid-row-gap:3rem;
 }
@@ -1131,7 +1131,7 @@ color:#fff;
 .stars{
 	position:relative;
 	top:-.4rem;
-font-size:.6rem;
+font-size:.8rem;
 margin-right:28%;
 }
 
