@@ -939,15 +939,15 @@ color:#fff;
 }
 
 .container5{
-    grid-template-columns:repeat(auto-fit,minmax(127px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
     /* background-color:black; */
 	grid-column-gap:1.3rem;
 	grid-row-gap:3rem;
 }
 
 .bg5 img{
-	width:130px;
-	height:120px;
+	width:150px;
+	height:147px;
 }
 
 
@@ -1103,14 +1103,14 @@ color:#fff;
 }
 
 .container5{
-    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(137px,1fr));
 	grid-column-gap:1rem;
 	grid-row-gap:3rem;
 }
 
 .bg5 img{
-	width:130px;
-	height:120px;
+	width:137px;
+	height:135px;
 }
 
 
