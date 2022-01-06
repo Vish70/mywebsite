@@ -15,7 +15,7 @@
 <body>
 
 	<div class="header">
-		<div class="burger" onclick="toggle()"><i class="fas fa-bars"></i></div>
+		<div class="burger"onclick="toggle()"><i class="fas fa-bars"></i></div>
 		<div class="logo">Fashion</div>
 		<nav>
 			<ul class="ul1" id="menu">
@@ -84,9 +84,27 @@
 
 
 
+  <!----------*Script*-------- -->
+
 
 
 <script>
+
+  
+function toggle(){
+   
+   const x = document.getElementById("menu");
+
+       if(x.style.display == "block")
+       {
+        x.style.display = "none";
+       }
+       else
+       {
+        x.style.display ="block";
+       }
+}
+
 
 
 const card = document.getElementById("card")
@@ -99,40 +117,9 @@ function openlogin(){
 	card.style.transform = "rotateY(0deg)";
 }
 	
-</script>
 
-
-
-
-
-
-
-
- <!----------*Script*-------- -->
-<script>
-	
-function toggle(){
-   
-   const x = document.getElementById("menu");
-
-       if(x.style.display == "block")
-       {
-       	x.style.display = "none";
-       }
-       else
-       {
-       	x.style.display ="block";
-       }
-}
 
 </script>
-
-
-
-
-
-
- 
 
 
 	
