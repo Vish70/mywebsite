@@ -1,4 +1,3 @@
-
 function valid(){
 	var f=document.querySelector('#name')
 	var username=document.querySelector('#name').value;
@@ -12,6 +11,7 @@ function valid(){
 	
 
 	if(usercheck.test(username)){
+		document.querySelector('#error').innerHTML=" ";
 		f.style.outlineColor="green";
 	}
 	else{
@@ -23,33 +23,91 @@ function valid(){
 
 
 	if(emailcheck.test(Email)){
+		document.querySelector("#error-2").innerHTML=" ";
 		email.style.outlineColor="green";
 
 	}
 	else{
+		
 		email.style.outlineColor="red";
 
 		return false;	
 	}
 	if(passcheck.test(Pass)){
+		document.querySelector('#error-3').innerHTML=" ";
 		password.style.outlineColor="green";
 
 	}
 	else{
+
 		password.style.outlineColor="red";
 
 		return false;
 	}
 	if(cPass.match(Pass)){
+		document.querySelector('#error-4').innerHTML=" ";
 		cpassword.style.outlineColor="green";
 
 	}else{
+
 		cpassword.style.outlineColor="red";
 
 		return false;
 	}
 
 }
+
+
+/////////  user icon start
+
+
+
+function iconcolor(){
+	var x=document.getElementById('user')
+	if(x.style.color=="yellow"){
+		x.style.color="darkgray";
+	}
+	else{
+		x.style.color="yellow";
+	}
+}
+
+
+function iconcolor2(){
+	var x=document.getElementById('user-2')
+	if(x.style.color=="yellow"){
+		x.style.color="darkgray";
+	}
+	else{
+		x.style.color="yellow";
+	}
+}
+
+function iconcolor3(){
+	var x=document.getElementById('user-3')
+	if(x.style.color=="yellow"){
+		x.style.color="darkgray";
+	}
+	else{
+		x.style.color="yellow";
+	}
+}
+
+
+function iconcolor4(){
+	var x=document.getElementById('user-4')
+	if(x.style.color=="yellow"){
+		x.style.color="darkgray";
+	}
+	else{
+		x.style.color="yellow";
+	}
+}
+
+
+/////////  user icon end
+
+
 
 
 
@@ -108,15 +166,43 @@ function validation(){
 }
 
 
-//////////   rotate
+
+
+/////////  user icon login
+
+
+function iconcolor5(){
+	var y=document.getElementById('user')
+	if(y.style.color=="yellow"){
+		y.style.color="darkgray";
+	}
+	else{
+		y.style.color="yellow";
+	}
+}
+
+
+function iconcolor6(){
+	var y=document.getElementById('user-2')
+	if(y.style.color=="yellow"){
+		y.style.color="darkgray";
+	}
+	else{
+		y.style.color="yellow";
+	}
+}
+
+function iconcolor7(){
+	var y=document.getElementById('user-3')
+	if(y.style.color=="yellow"){
+		y.style.color="darkgray";
+	}
+	else{
+		y.style.color="yellow";
+	}
+}
 
 
 
-			const card = document.getElementById("card")
+/////////  user icon login end
 
-			function openlogin(){
-				card.style.transform = "rotateY(0deg)";
-			}
-	function openregister(){
-				card.style.transform = "rotateY(-180deg)";
-			}

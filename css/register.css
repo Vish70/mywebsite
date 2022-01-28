@@ -9,6 +9,12 @@ body{
 	/* background-color:maroon; */
 }
 
+/* #name{
+    border-radius:5px;
+	outline:1px solid;
+
+} 
+*/
 .login{
 	display:flex;
 	flex-direction:column;
@@ -31,15 +37,18 @@ form{
 	/* text-align:center; */
 }
 form input,button{
+	/* outline:none; */
 	padding:1rem;
 	width:300px;
 	border:none; 
 	border-radius:4px;
     outline:2px solid rgba(0,0,0,0.1);
+	/* border-color:rgba(0,0,0,0.1); */
 	font-family:sans-serif;
 }
 
 button{
+	border:none;
 	cursor:pointer;
 	color:white;
 	font-weight:bolder;
@@ -106,3 +115,21 @@ h2{
 .signin-name i{
 font-size:1rem;
 color:#69bff8;
+
+}
+#error{
+	display:none;
+	color:gray;
+}
+#error-2{
+	display:none;
+	color:gray;
+}
+#error-3{
+	display:none;
+	color:gray;
+}
+#error-4{
+	display:none;
+	color:gray;
+}
