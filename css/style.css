@@ -100,9 +100,32 @@ h2{
 	font-weight: bolder;
 	font-size:.8rem;
 }
-.signin-name a{
+.signein a{
+	color:white;
 	text-decoration:none;
 }
-.signin-name i{
+.signein i{
 font-size:1rem;
 color:#69bff8;
+}
+
+
+@media screen and (max-width:874px) and (min-width:382px){
+
+.signin-name{
+	width:120%;
+	grid-row-gap:.3rem;
+	flex-direction:column;
+	}
+
+}
+
+
+@media screen and (max-width:381px) and (min-width:340px){
+
+	.signin-name{
+	  width:220%;
+		
+	}
+
+}
