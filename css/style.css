@@ -110,8 +110,7 @@ color:#69bff8;
 }
 
 
-@media screen and (max-width:874px) and (min-width:382px){
-
+@media screen and (max-width:874px) and (min-width:420px){
 .signin-name{
 	width:120%;
 	grid-row-gap:.3rem;
@@ -120,12 +119,15 @@ color:#69bff8;
 
 }
 
-
-@media screen and (max-width:381px) and (min-width:340px){
-
+@media screen and (max-width:419px) and (min-width:370px){
 	.signin-name{
 	  width:220%;
-		
+	  margin-left:1.4rem;
 	}
 
+}
+@media screen and (max-width:369px) and (min-width:340px){
+	.signin-name{
+	  width:225%;
+	}
 }
