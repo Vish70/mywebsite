@@ -16,13 +16,13 @@
 
 
 	<div class="header">
-		<div class="burger" onclick="toggle()" ><i class="fas fa-bars"></i></div>
+		<div class="burger" id="menu-btn"></div>
 		<div class="logo">Fashion</div>
-		<nav>
+		<nav id="navbar">
 			<ul class="ul1" id="menu">
-				<li class="active-li"><a href="shop.html" class="active-a">Home</a></li>
-				<li><a href="#">Product <i class="fas fa-caret-circle-down"></i></a>
-					<ul class="ul2">
+				<li class="active-li"><a href="index.html" class="active-a">Home</a></li>
+				<li><a href="#" id="product">Product <i class="fas fa-caret-circle-down" id="iconrotate"></i></a>
+					<ul class="ul2" id="ul2">
 
 						<li><a href="Get more.html">Men's</a></li>
 						<li><a href="get more2.html">Girl's</a></li>
@@ -34,7 +34,7 @@
 				<li><a href="#">Help</a></li>
 			</ul>
 		</nav>
-		<div class="login"><a href="index.html" class="login-a">Login</a></div>
+		<div class="login"><a href="login.html" class="login-a">Login</a></div>
 		<div class="cart">
 			<div class="zero">
 				<span class="span-9"> 0 </span></div>
@@ -633,7 +633,7 @@
 					<div class="links">
 						<h6><span class="span-8">Link</span>shortcut</h6>
 						<ul class="footer-ul-1">
-							<li class="footer-li all-li"><a href="shop.html" id="footer-a">Home</a></li>
+							<li class="footer-li all-li"><a href="index.html" id="footer-a">Home</a></li>
 							<li class="all-li"><a href="Product.html" id="footer-a">Product</a></li>
 							<ul class="footer-ul-2">
 
@@ -727,26 +727,30 @@
 
 		<!----------*Script*-------- -->
 
+		<script>
 
-<script>
-
-function toggle(){
-   
-   const x = document.getElementById("menu");
-
-       if(x.style.display == "block")
-       {
-        x.style.display = "none";
-       }
-       else
-       {
-        x.style.display ="block";
-       }
-}
-
-
-</script>
-
+			product.addEventListener('click',function(){
+			  // e.preventDefault();
+			  if(iconrotate.style.transform=="rotate(0deg)" , ul2.style.display=="block"){
+			  document.getElementById('iconrotate').style.transform="rotate(178deg)";
+			 document.getElementById('ul2').style.display="none";
+			}
+			 else{
+			   document.getElementById('iconrotate').style.transform="rotate(0deg)";
+			 document.getElementById('ul2').style.display="block";
+			
+			}
+			 })
+			
+			 var burger=document.getElementById('menu-btn');
+			var navbar=document.getElementById('navbar');
+			document.getElementById('menu-btn').onclick=()=>{
+			navbar.classList.toggle('active');
+			burger.classList.toggle('active');
+			}
+			
+			
+			</script>
 
 	</body>
 	</html>
